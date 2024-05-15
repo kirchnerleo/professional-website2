@@ -2,8 +2,8 @@
   <div>
     <a href="#/"> Home </a>
     <a href="#/Resume"> Resume </a>
-    <a href="#/About">About this website </a>
-    <a href="#/Contact">Contact</a>
+    <a href="#/About"> About this website </a>
+    <a href="#/Contact"> Contact </a>
   </div>
   <component :is="currentView" />
 </template>
