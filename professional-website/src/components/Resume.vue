@@ -3,6 +3,7 @@
   <a href="src/assets/LeoKirchnerResume.pdf" download="Leo_Kirchner_Resume.pdf">
     Download a copy of my resume
   </a>
+  <!--Will need to update resume before launch-->
   <div>
     <Card>
       <template #title>Education</template>
