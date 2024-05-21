@@ -15,6 +15,6 @@
   and most recent iteration of this project. During my time working on our
   Software Engineering capstone project, my team and I worked with Prime Vue for
   our front end development, and I enjoyed using it so much I decided to remake
-  my professional website using Prime Vue and Vue.js as a summer 2024 project.
+  my professional website using Prime Vue and Vue.js as a 2024 summer project.
   <!--note: add more detail as project progresses, maybe add a github link-->
 </template>

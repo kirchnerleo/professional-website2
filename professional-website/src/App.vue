@@ -4,7 +4,7 @@ import Header from "./components/Header.vue";
 
 <template>
   <header>
-    <Header/>
+    <Header />
   </header>
 </template>
 
