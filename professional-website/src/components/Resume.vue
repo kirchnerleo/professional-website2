@@ -1,5 +1,8 @@
 <template>
-  RESUME
+  RESUME<br />
+  <a href="src/assets/LeoKirchnerResume.pdf" download="Leo_Kirchner_Resume.pdf">
+    Download a copy of my resume
+  </a>
   <div>
     <Card>
       <template #title>Education</template>
