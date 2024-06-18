@@ -8,4 +8,9 @@ import Header from "./components/Header.vue";
   </header>
 </template>
 
-<style scoped></style>
+<style>
+@font-face {
+  font-family: "VT323";
+  src: local("VR323"), url(./fonts/VT323-Regular.ttf) format("truetype");
+}
+</style>
