@@ -1,5 +1,8 @@
+<script setup>
+import { ref } from "vue";
+</script>
 <template>
-  <div class="header grid border-primary border-bottom-3 gap-1">
+  <div class="header grid column-gap-3">
     <div class="col pl-3">Leo Kirchner</div>
     <div class="flex align-items-end">
       <a href="#/"
@@ -7,6 +10,7 @@
           label="Home"
           class="border-noround-bottom"
           :outlined="homeOutlined"
+          severity="warn"
         ></Button>
       </a>
     </div>
@@ -14,8 +18,9 @@
       <a href="#/Resume"
         ><Button
           label="Resume"
-          class="border-noround-bottom"
+          class="border-noround-bottom resumeButton"
           :outlined="resumeOutlined"
+          severity="help"
       /></a>
     </div>
     <div class="flex align-items-end">
@@ -24,6 +29,7 @@
           label="About"
           class="border-noround-bottom"
           :outlined="aboutOutlined"
+          severity="success"
         ></Button
       ></a>
     </div>
@@ -33,9 +39,19 @@
           label="Contact"
           class="border-noround-bottom"
           :outlined="contactOutlined"
+          severity="info"
         ></Button
       ></a>
     </div>
+    <div
+      class="divider"
+      :class="{
+        homeDivider: !homeOutlined,
+        resumeDivider: !resumeOutlined,
+        aboutDivider: !aboutOutlined,
+        contactDivider: !contactOutlined,
+      }"
+    ></div>
   </div>
   <br />
   <component :is="currentView" />
@@ -48,6 +64,8 @@ import Resume from "./Resume.vue";
 import About from "./About.vue";
 import Contact from "./Contact.vue";
 
+const headerBorder = document.getElementById("headerBorder");
+
 const routes = {
   "/": Home,
   "/Resume": Resume,
@@ -57,7 +75,7 @@ const routes = {
 //some styling depends on current page view
 export default {
   data() {
-    //checks for route, and outlines tab accordingly
+    //checks for route, and applies styling accordingly
     if (window.location.hash == "#/") {
       return {
         currentPath: window.location.hash,
@@ -126,9 +144,25 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .header {
   font-family: "VT323";
   font-size: 45px;
+}
+.divider {
+  height: 5px;
+  width: 100%;
+}
+.homeDivider {
+  background-color: #fbbf24;
+}
+.resumeDivider {
+  background-color: #c084fc;
+}
+.aboutDivider {
+  background-color: #4ade80;
+}
+.contactDivider {
+  background-color: #38bdf8;
 }
 </style>
