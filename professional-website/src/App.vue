@@ -1,5 +1,6 @@
 <script setup>
 import Header from "./components/Header.vue";
+import "./assets/styling.css";
 </script>
 
 <template>
