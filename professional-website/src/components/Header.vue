@@ -1,6 +1,4 @@
-<script setup>
-import { ref } from "vue";
-</script>
+<script setup></script>
 <template>
   <div class="header grid column-gap-3">
     <div class="col pl-3">Leo Kirchner</div>
@@ -33,7 +31,7 @@ import { ref } from "vue";
         ></Button
       ></a>
     </div>
-    <div class="flex align-items-end pr-3">
+    <div class="flex align-items-end pr-5">
       <a href="#/Contact"
         ><Button
           label="Contact"
@@ -148,6 +146,9 @@ export default {
 .header {
   font-family: "VT323";
   font-size: 45px;
+  background-color: #121212;
+  position: fixed;
+  width: 100vw;
 }
 .divider {
   height: 5px;

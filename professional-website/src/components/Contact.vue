@@ -1,7 +1,33 @@
 <template>
-  <header>CONTACT</header>
-  <a href="https://www.linkedin.com/in/leo-kirchner-121bb5267"> LinkedIn </a>
-  <a href="https://uwstout.joinhandshake.com/stu/users/45045598"> Handshake </a>
-  <a href="https://github.com/kirchnerleo?tab=overview"> Github </a>
-  kirchnera2707@my.uwstout.edu
+  <!-- <div class="contactBackground"> -->
+  <Card class="contactCard" style="margin-top: 66px">
+    <template #title>> Contact Information</template>
+    <template #content
+      >Looking to get in touch? You can email me at kirchnera2707@my.uwstout.edu
+      or find me at any of the following...
+      <div class="flex flex-row gap-2">
+        <a href="https://www.linkedin.com/in/leo-kirchner-121bb5267"
+          ><Button label="LinkedIn" severity="info" />
+        </a>
+        <a href="https://github.com/kirchnerleo?tab=overview"
+          ><Button label="GitHub" severity="info" />
+        </a>
+        <a href="https://uwstout.joinhandshake.com/stu/users/45045598"
+          ><Button label="HandShake" severity="info" />
+        </a>
+      </div>
+    </template>
+  </Card>
+  <!-- </div> -->
 </template>
+<style>
+.contactCard {
+  background: rgba(56, 189, 248, 0.04);
+  margin: 2%;
+}
+.contactBackground {
+  background: rgba(56, 189, 248, 0.04);
+  height: 100vh;
+  margin: -0.5rem;
+}
+</style>

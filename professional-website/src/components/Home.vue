@@ -1,8 +1,8 @@
 <template>
-  <div class="grid flex align-items-center">
+  <div class="grid flex align-items-center" style="height: 100vh">
     <div class="col">
-      <Card class="card">
-        <template #title>Hello!</template>
+      <Card class="card homeCard">
+        <template #title>> Hello!</template>
         <template #content>
           I'm Leo Kirchner, a B.S. Computer Science - Interdisciplinary student
           at the University of Wisconsin - Stout. I started my college education
@@ -30,5 +30,13 @@
 <style>
 .portrait {
   border-radius: 50%;
+}
+.homeCard {
+  background: rgba(249, 115, 22, 0.04);
+}
+.homeBackground {
+  background: rgba(249, 115, 22, 0.04);
+  height: 100vh;
+  margin-bottom: -0.5rem;
 }
 </style>
