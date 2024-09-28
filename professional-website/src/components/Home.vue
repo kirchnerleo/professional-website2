@@ -1,7 +1,7 @@
 <template>
-  <div class="grid flex align-items-center" style="height: 100vh">
+  <div class="grid flex align-items-center" style="margin-top: 66px">
     <div class="col">
-      <Card class="card homeCard">
+      <Card class="card homeCard border-1">
         <template #title>> Hello!</template>
         <template #content>
           I'm Leo Kirchner, a B.S. Computer Science - Interdisciplinary student
@@ -33,10 +33,6 @@
 }
 .homeCard {
   background: rgba(249, 115, 22, 0.04);
-}
-.homeBackground {
-  background: rgba(249, 115, 22, 0.04);
-  height: 100vh;
-  margin-bottom: -0.5rem;
+  border-color: #fbbf24;
 }
 </style>

@@ -2,7 +2,7 @@
   <!-- <div class="grid flex align-items-center resumeBackground"> -->
   <!--Will need to update resume before launch-->
   <div class="row">
-    <Card class="resumeCard" style="margin-top: 66px">
+    <Card class="resumeCard border-1" style="margin-top: 66px">
       <template #title>> Resume </template>
       <template #content>
         <a
@@ -14,7 +14,7 @@
         </a>
       </template>
     </Card>
-    <Card class="resumeCard">
+    <Card class="resumeCard border-1">
       <template #title>> Education</template>
       <template #content>
         <div class="subtitle">Current</div>
@@ -32,7 +32,7 @@
         </div>
       </template>
     </Card>
-    <Card class="resumeCard">
+    <Card class="resumeCard border-1">
       <template #title>> Technical Projects</template>
       <template #content>
         <div class="subtitle">
@@ -66,7 +66,7 @@
         </div>
       </template>
     </Card>
-    <Card class="resumeCard">
+    <Card class="resumeCard border-1">
       <template #title>> Technical Skills</template>
       <template #content>
         <div class="subtitle">Programs</div>
@@ -84,7 +84,7 @@
         </div>
       </template>
     </Card>
-    <Card class="resumeCard">
+    <Card class="resumeCard border-1">
       <template #title>> Relevant Coursework</template>
       <template #content>
         <div class="content">
@@ -95,7 +95,7 @@
         </div>
       </template>
     </Card>
-    <Card class="resumeCard">
+    <Card class="resumeCard border-1">
       <template #title>> Previous work experience</template>
       <template #content>
         <div class="subtitle">
@@ -117,7 +117,7 @@
         </div>
       </template>
     </Card>
-    <Card class="resumeCard">
+    <Card class="resumeCard border-1">
       <template #title>> Community Engagement</template>
       <template #content>
         <div class="subtitle">
@@ -142,11 +142,7 @@
   background: rgba(192, 132, 252, 0.04);
   margin: 2%;
   line-height: 2;
-}
-.resumeBackground {
-  background: rgba(192, 132, 252, 0.04);
-  height: 100%;
-  margin: -0.5rem;
+  border-color: #c084fc;
 }
 .subtitle {
   font-size: 20px;

@@ -1,6 +1,6 @@
 <template>
   <!-- <div class="aboutBackground flex align-items-center"> -->
-  <Card class="aboutCard" style="margin-top: 66px">
+  <Card class="aboutCard border-1" style="margin-top: 66px">
     <template #title>> About This Site</template>
     <template #content>
       If you want to take a look at some of my work, you already have! The first
@@ -29,10 +29,6 @@
 .aboutCard {
   background: rgba(34, 197, 94, 0.04);
   margin: 2%;
-}
-.aboutBackground {
-  background: rgba(34, 197, 94, 0.04);
-  height: 100vh;
-  margin: -0.5rem;
+  border-color: #4ade80;
 }
 </style>

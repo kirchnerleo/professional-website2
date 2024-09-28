@@ -1,6 +1,6 @@
 <template>
   <!-- <div class="contactBackground"> -->
-  <Card class="contactCard" style="margin-top: 66px">
+  <Card class="contactCard border-1" style="margin-top: 66px">
     <template #title>> Contact Information</template>
     <template #content
       >Looking to get in touch? You can email me at kirchnera2707@my.uwstout.edu
@@ -24,10 +24,6 @@
 .contactCard {
   background: rgba(56, 189, 248, 0.04);
   margin: 2%;
-}
-.contactBackground {
-  background: rgba(56, 189, 248, 0.04);
-  height: 100vh;
-  margin: -0.5rem;
+  border-color: #38bdf8;
 }
 </style>
