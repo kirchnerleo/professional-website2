@@ -8,9 +8,12 @@
         <a
           href="/src/assets/LeoKirchnerResume.pdf"
           download="Leo_Kirchner_Resume.pdf"
-          ><Button severity="help" style="position: static"
-            >Download a copy</Button
-          >
+          ><Button
+            label="Download a copy"
+            severity="help"
+            icon="pi pi-download"
+            style="position: static"
+          />
         </a>
       </template>
     </Card>

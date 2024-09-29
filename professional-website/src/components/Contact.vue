@@ -7,10 +7,10 @@
       or find me at any of the following...
       <div class="flex flex-row gap-2">
         <a href="https://www.linkedin.com/in/leo-kirchner-121bb5267"
-          ><Button label="LinkedIn" severity="info" />
+          ><Button label="LinkedIn" severity="info" icon="pi pi-linkedin" />
         </a>
         <a href="https://github.com/kirchnerleo?tab=overview"
-          ><Button label="GitHub" severity="info" />
+          ><Button label="GitHub" severity="info" icon="pi pi-github" />
         </a>
         <a href="https://uwstout.joinhandshake.com/stu/users/45045598"
           ><Button label="HandShake" severity="info" />
