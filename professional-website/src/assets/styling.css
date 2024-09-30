@@ -1,0 +1,17 @@
+.p-card {
+  font-family: Consolas, "Courier New", monospace;
+  line-height: 3;
+}
+.p-card .p-card-caption .p-card-title {
+  font-size: 40px;
+  font-family: "VT323";
+  font-weight: normal;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+.p-card .p-card-content {
+  font-size: 16px;
+}
+.p-button {
+  font-family: Consolas, "Courier New", monospace;
+}
