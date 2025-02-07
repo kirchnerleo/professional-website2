@@ -3,7 +3,7 @@
   <Card class="contactCard border-1" style="margin-top: 66px">
     <template #title>> Contact Information</template>
     <template #content
-      >Looking to get in touch? You can email me at kirchnera2707@my.uwstout.edu
+      >Looking to get in touch? I'd love to hear from you! You can email me at kirchnera2707@my.uwstout.edu
       or find me at any of the following...
       <div class="flex flex-row gap-2">
         <a href="https://www.linkedin.com/in/leo-kirchner-121bb5267"

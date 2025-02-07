@@ -4,7 +4,7 @@
       <template #title>> Resume </template>
       <template #content>
         <a
-          href="/src/assets/Leo_Kirchner_Resume.pdf"
+          href="/src/assets/LeoKirchnerResume01022024.pdf"
           download="Leo_Kirchner_Resume.pdf"
           ><Button
             label="Download a copy"
@@ -18,7 +18,6 @@
     <Card class="resumeCard border-1">
       <template #title>> Education</template>
       <template #content>
-        <div class="subtitle">Current</div>
         <div class="content">
           University of Wisconsin - Stout, Fall 2023 - Fall 2024 <br />
           Degree: Bachelor of Science <br />
@@ -27,7 +26,7 @@
           Fall 2022 and Spring 2023 Dean's List<br />
           3.6 Current GPA <br />
         </div>
-        <div class="subtitle">Previous</div>
+        <br>
         <div class="content">
           Normandale Community College, Fall 2019 - Spring 2022<br />
           Major: Computer Science Transfer Pathway<br />
@@ -41,21 +40,17 @@
         <div class="content">
           <ul>
             <li>
-              Currently leading a semester long project for the second part of
-              the Computer Science capstone. Continuing to develop proficiency
-              in Agile techniques while working on a website designed to assist
-              backpackers in trip planning.
+              Led a semester long project for the second part of the Computer Science capstone. 
+              Developed proficiency in Agile techniques while working on a website designed to 
+              assist backpackers in trip planning.
             </li>
             <li>
-              As team lead, building leadership skills by pursuing the spirit of
-              an Agile and democratic team: encouraging team decision making,
-              deferring to team members expertise, and supporting team morale
-              and learning.
+              As team lead, built leadership skills by pursuing the spirit of an Agile and democratic team; 
+              encouraged team decision making, deferred to team member’s expertise, and supported team morale and learning.
             </li>
             <li>
-              Using this project to continue to hone technical capabilities in
-              C# and .NET as well as Vue and Vue.js, in addition to Visual
-              Studio Code, Visual Studio, and GitHub.
+              Used this project to continue to hone technical capabilities in JavaScript, C#, and .NET in 
+              addition to Visual Studio Code, Visual Studio, and GitHub.
             </li>
           </ul>
         </div>
@@ -90,8 +85,7 @@
               PHP.
             </li>
             <li>
-              This website was remade using Vue.js and Prime Vue over the summer
-              of 2024.
+              This website was remade using Vue.js and Prime Vue.
             </li>
           </ul>
         </div>
@@ -189,16 +183,16 @@
                     <li>Python</li>
                     <li>HTML</li>
                     <li>CSS</li>
+                    <li>JavaScript</li>
                     <li>Prime Vue</li>
-                    <li>Vue.js</li>
                   </div>
                   <div>
-                    <li>JavaScript</li>
+                    <li>Vue.js</li>
+                    <li>C#</li>
+                    <li>.NET</li>
                     <li>SQL</li>
                     <li>PHP</li>
                     <li>Java</li>
-                    <li>C#</li>
-                    <li>.NET</li>
                   </div>
                 </div>
               </ul>
@@ -228,11 +222,12 @@
                 <li>Algorithm Design and Analysis</li>
                 <li>Database Manipulation and Design</li>
                 <li>Web and Internet Programming</li>
+                <li>Human Computer Interaction</li>
               </div>
               <div>
                 <li>Software Engineering Principles</li>
                 <li>Discrete Mathematics</li>
-                <li>Software Engineering Practicum (Current Semester)</li>
+                <li>Software Engineering Practicum</li>
                 <li>Operating Systems</li>
               </div>
             </div>

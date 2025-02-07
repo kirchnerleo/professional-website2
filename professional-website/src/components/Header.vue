@@ -22,9 +22,9 @@
       /></a>
     </div>
     <div class="flex align-items-end">
-      <a href="#/About"
+      <a href="#/Projects"
         ><Button
-          label="About"
+          label="Projects"
           class="border-noround-bottom"
           :outlined="aboutOutlined"
           severity="success"
@@ -59,7 +59,7 @@
 import { ref, onMounted } from "vue";
 import Home from "./Home.vue";
 import Resume from "./Resume.vue";
-import About from "./About.vue";
+import Projects from "./Projects.vue";
 import Contact from "./Contact.vue";
 
 const headerBorder = document.getElementById("headerBorder");
@@ -67,7 +67,7 @@ const headerBorder = document.getElementById("headerBorder");
 const routes = {
   "/": Home,
   "/Resume": Resume,
-  "/About": About,
+  "/Projects": Projects,
   "/Contact": Contact,
 };
 //some styling depends on current page view
@@ -90,7 +90,7 @@ export default {
         aboutOutlined: true,
         contactOutlined: true,
       };
-    } else if ((window.location.hash = "#/About")) {
+    } else if ((window.location.hash = "#/Projects")) {
       return {
         currentPath: window.location.hash,
         homeOutlined: true,
@@ -127,7 +127,7 @@ export default {
         this.resumeOutlined = false;
         this.aboutOutlined = true;
         this.contactOutlined = true;
-      } else if (this.currentPath == "#/About") {
+      } else if (this.currentPath == "#/Projects") {
         this.homeOutlined = true;
         this.resumeOutlined = true;
         this.aboutOutlined = false;
