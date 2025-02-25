@@ -9,6 +9,8 @@ import Button from "primevue/button";
 import "primeicons/primeicons.css";
 import Galleria from "primevue/galleria";
 import Dialog from "primevue/dialog";
+import Sidebar from "primevue/sidebar";
+
 
 const app = createApp(App);
 app.use(PrimeVue);
@@ -16,4 +18,5 @@ app.component("Card", Card);
 app.component("Button", Button);
 app.component("Galleria", Galleria);
 app.component("Dialog", Dialog);
+app.component("Sidebar", Sidebar);
 app.mount("#app");

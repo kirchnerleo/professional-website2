@@ -1,55 +1,36 @@
 <script setup></script>
 <template>
-  <div class="header grid column-gap-3">
-    <div class="col pl-3">Leo Kirchner</div>
-    <div class="flex align-items-end">
-      <a href="#/"
-        ><Button
-          label="Home"
-          class="border-noround-bottom"
-          :outlined="homeOutlined"
-          severity="warn"
-        ></Button>
-      </a>
+  <div class="header">
+    <div class="flex flex-column justify-content-between flex-nowrap sm:flex-row">
+      <div style="white-space:nowrap; padding:1%">Leo Kirchner</div>
+      <div class="flex flex-row sm:gap-3 gap-2 pl-1">
+        <div class="flex align-items-end">
+          <a href="#/"><Button label="Home" class="border-noround-bottom px-2 sm:px-3" :outlined="homeOutlined"
+              severity="warn"></Button>
+          </a>
+        </div>
+        <div class="flex align-items-end">
+          <a href="#/Resume"><Button label="Resume" class="border-noround-bottom resumeButton px-2 sm:px-3"
+              :outlined="resumeOutlined" severity="help" /></a>
+        </div>
+        <div class="flex align-items-end">
+          <a href="#/Projects"><Button label="Projects" class="border-noround-bottom px-2 sm:px-3"
+              :outlined="aboutOutlined" severity="success"></Button></a>
+        </div>
+        <div class="flex align-items-end sm:pr-5">
+          <a href="#/Contact"><Button label="Contact" class="border-noround-bottom px-2 sm:px-3"
+              :outlined="contactOutlined" severity="info"></Button></a>
+        </div>
+      </div>
     </div>
-    <div class="flex align-items-end">
-      <a href="#/Resume"
-        ><Button
-          label="Resume"
-          class="border-noround-bottom resumeButton"
-          :outlined="resumeOutlined"
-          severity="help"
-      /></a>
-    </div>
-    <div class="flex align-items-end">
-      <a href="#/Projects"
-        ><Button
-          label="Projects"
-          class="border-noround-bottom"
-          :outlined="aboutOutlined"
-          severity="success"
-        ></Button
-      ></a>
-    </div>
-    <div class="flex align-items-end pr-5">
-      <a href="#/Contact"
-        ><Button
-          label="Contact"
-          class="border-noround-bottom"
-          :outlined="contactOutlined"
-          severity="info"
-        ></Button
-      ></a>
-    </div>
-    <div
-      class="divider"
-      :class="{
-        homeDivider: !homeOutlined,
-        resumeDivider: !resumeOutlined,
-        aboutDivider: !aboutOutlined,
-        contactDivider: !contactOutlined,
-      }"
-    ></div>
+
+
+    <div class="divider" :class="{
+      homeDivider: !homeOutlined,
+      resumeDivider: !resumeOutlined,
+      aboutDivider: !aboutOutlined,
+      contactDivider: !contactOutlined,
+    }"></div>
   </div>
   <br />
   <component :is="currentView" />
@@ -150,19 +131,24 @@ export default {
   position: fixed;
   width: 100vw;
 }
+
 .divider {
   height: 5px;
   width: 100%;
 }
+
 .homeDivider {
   background-color: #fbbf24;
 }
+
 .resumeDivider {
   background-color: #c084fc;
 }
+
 .aboutDivider {
   background-color: #4ade80;
 }
+
 .contactDivider {
   background-color: #38bdf8;
 }

@@ -18,3 +18,10 @@
 ul {
   list-style-type: "- ";
 }
+body{
+  margin:0px;
+}
+.p-sidebar .p-sidebar-header {
+  padding: 0.25rem;
+  justify-content: end;
+}

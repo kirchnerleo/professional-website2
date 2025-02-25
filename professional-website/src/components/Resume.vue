@@ -1,24 +1,26 @@
 <template>
   <div class="row">
-    <Card class="resumeCard border-1" style="margin-top: 66px">
-      <template #title>> Resume </template>
-      <template #content>
-        <a
-          href="/src/assets/LeoKirchnerResume01022024.pdf"
-          download="Leo_Kirchner_Resume.pdf"
-          ><Button
-            label="Download a copy"
-            severity="help"
-            icon="pi pi-download"
-            style="position: static"
-          />
+    <Card class="resumeCard border-1" style="margin-top: 100px">
+      <template #title>
+        <div class="sm:text-5xl text-4xl">> Resume</div>
+      </template>
+      <template #content> <!--Add option for word or pdf version-->
+        <a href="/src/assets/LeoKirchnerResume02052025NoNum.pdf" download="Leo_Kirchner_Resume.pdf"><Button
+            label="Download PDF" severity="help" icon="pi pi-download" style="position: static; margin-right:10px"
+            class="sm:w-auto w-full" />
+        </a>
+        <a href="/src/assets/LeoKirchnerResume02052025NoNum.docx" download="Leo_Kirchner_Resume.docx"><Button
+            label="Download DOCX" severity="help" icon="pi pi-download" style="position: static"
+            class="sm:w-auto w-full" />
         </a>
       </template>
     </Card>
     <Card class="resumeCard border-1">
-      <template #title>> Education</template>
+      <template #title>
+        <div class="sm:text-5xl text-4xl">> Education</div>
+      </template>
       <template #content>
-        <div class="content">
+        <div class="content sm:text-base text-xs">
           University of Wisconsin - Stout, Fall 2023 - Fall 2024 <br />
           Degree: Bachelor of Science <br />
           Major: Computer Science, Interdisciplinary <br />
@@ -27,36 +29,39 @@
           3.6 Current GPA <br />
         </div>
         <br>
-        <div class="content">
+        <div class="content sm:text-base text-xs">
           Normandale Community College, Fall 2019 - Spring 2022<br />
           Major: Computer Science Transfer Pathway<br />
         </div>
       </template>
     </Card>
     <Card class="resumeCard border-1">
-      <template #title>> Technical Projects</template>
+      <template #title>
+        <div class="sm:text-5xl text-4xl">> Technical Projects</div>
+      </template>
       <template #content>
-        <div class="subtitle">Software Engineering Practicum, Fall 2024</div>
-        <div class="content">
-          <ul>
+        <div class="subtitle text-sm sm:text-xl">Software Engineering Practicum, Fall 2024</div>
+        <div class="content sm:text-base text-xs">
+          <ul style="padding-left: 0">
             <li>
-              Led a semester long project for the second part of the Computer Science capstone. 
-              Developed proficiency in Agile techniques while working on a website designed to 
+              Led a semester long project for the second part of the Computer Science capstone.
+              Developed proficiency in Agile techniques while working on a website designed to
               assist backpackers in trip planning.
             </li>
             <li>
-              As team lead, built leadership skills by pursuing the spirit of an Agile and democratic team; 
-              encouraged team decision making, deferred to team member’s expertise, and supported team morale and learning.
+              As team lead, built leadership skills by pursuing the spirit of an Agile and democratic team;
+              encouraged team decision making, deferred to team member’s expertise, and supported team morale and
+              learning.
             </li>
             <li>
-              Used this project to continue to hone technical capabilities in JavaScript, C#, and .NET in 
+              Used this project to continue to hone technical capabilities in JavaScript, C#, and .NET in
               addition to Visual Studio Code, Visual Studio, and GitHub.
             </li>
           </ul>
         </div>
-        <div class="subtitle">Software Engineering Practicum, Spring 2024</div>
-        <div class="content">
-          <ul>
+        <div class="subtitle text-sm sm:text-xl">Software Engineering Practicum, Spring 2024</div>
+        <div class="content sm:text-base text-xs">
+          <ul style="padding-left: 0">
             <li>
               Utilized techniques learned in Software Engineering Principles
               course such as Agile and Scrum, worked on a semester long team
@@ -76,9 +81,9 @@
             </li>
           </ul>
         </div>
-        <div class="subtitle">Personal Website</div>
-        <div class="content">
-          <ul>
+        <div class="subtitle text-sm sm:text-xl">Personal Website</div>
+        <div class="content sm:text-base text-xs">
+          <ul style="padding-left: 0">
             <li>
               As a final project for Web and Internet Programming, designed and
               created a professional website using HTML, CSS, JavaScript, and
@@ -89,11 +94,11 @@
             </li>
           </ul>
         </div>
-        <div class="subtitle">
+        <div class="subtitle text-sm sm:text-xl">
           Database Manipulation and Design Final Project
         </div>
-        <div class="content">
-          <ul>
+        <div class="content sm:text-base text-xs">
+          <ul style="padding-left: 0">
             <li>
               Utilized SQL and MySQL Workbench with relational database
               techniques to design and implement a working database complete
@@ -105,12 +110,14 @@
       </template>
     </Card>
     <Card class="resumeCard border-1">
-      <template #title>> Previous work experience</template>
+      <template #title>
+        <div class="sm:text-5xl text-3xl">> Previous Work Experience</div>
+      </template>
       <template #content>
-        <div class="subtitle">Assistant Teacher</div>
-        <div class="content">
+        <div class="subtitle text-sm sm:text-xl">Assistant Teacher</div>
+        <div class="content sm:text-base text-xs">
           Tech Academy of Minnesota, Summer 2024
-          <ul>
+          <ul class="sm:text-base text-xs">
             <li>
               Supporting teachers by working “behind the scenes” to keep the
               class running smoothly, such as technical troubleshooting, working
@@ -129,10 +136,10 @@
             </li>
           </ul>
         </div>
-        <div class="subtitle">Building Supervisor</div>
-        <div class="content">
+        <div class="subtitle text-sm sm:text-xl">Building Supervisor</div>
+        <div class="content sm:text-base text-xs">
           Independent School District 196, Fall 2019 - Summer 2022
-          <ul>
+          <ul class="sm:text-base text-xs">
             <li>
               Provided school building security during Community Education
               activities by directing participants and instructors to their
@@ -155,15 +162,15 @@
       </template>
     </Card>
     <Card class="resumeCard border-1">
-      <template #title
-        >> Technical Skills (From most to least experienced)</template
-      >
+      <template #title>
+        <div class="sm:text-5xl text-4xl">> Technical Skills</div>
+      </template>
       <template #content>
-        <div class="flex flex-row justify-content-around">
+        <div class="flex sm:flex-row justify-content-around flex-column">
           <div>
-            <div class="subtitle">Programs</div>
-            <div class="content">
-              <ul>
+            <div class="subtitle text-sm sm:text-xl">Programs</div>
+            <div class="content sm:text-base text-xs">
+              <ul style="padding-left: 0">
                 <li>Visual Studio</li>
                 <li>Notepad++</li>
                 <li>Visual Studio Code</li>
@@ -174,10 +181,10 @@
           </div>
 
           <div>
-            <div class="subtitle">Languages and Frameworks</div>
-            <div class="content">
+            <div class="subtitle text-sm sm:text-xl">Languages and Frameworks</div>
+            <div class="content sm:text-base text-xs">
               <ul style="padding-left: 0">
-                <div class="flex flex-row justify-content-between">
+                <div class="flex flex-column sm:flex-row justify-content-between">
                   <div>
                     <li>C/C++</li>
                     <li>Python</li>
@@ -200,9 +207,9 @@
           </div>
 
           <div>
-            <div class="subtitle">Operating Systems</div>
-            <div class="content">
-              <ul>
+            <div class="subtitle text-sm sm:text-xl">Operating Systems</div>
+            <div class="content sm:text-base text-xs">
+              <ul style="padding-left: 0">
                 <li>Windows</li>
                 <li>Linux</li>
               </ul>
@@ -212,11 +219,13 @@
       </template>
     </Card>
     <Card class="resumeCard border-1">
-      <template #title>> Relevant Coursework</template>
+      <template #title>
+        <div class="sm:text-5xl text-4xl">> Relevant Coursework</div>
+      </template>
       <template #content>
-        <div class="content">
-          <ul>
-            <div class="flex flex-row justify-content-around">
+        <div class="content sm:text-base text-xs">
+          <ul style="padding-left: 0">
+            <div class="flex sm:flex-row flex-column justify-content-around">
               <div>
                 <li>Data Structures</li>
                 <li>Algorithm Design and Analysis</li>
@@ -237,13 +246,15 @@
     </Card>
 
     <Card class="resumeCard border-1">
-      <template #title>> Community Engagement</template>
+      <template #title>
+        <div class="sm:text-5xl text-4xl">> Community Engagement</div>
+      </template>
       <template #content>
-        <div class="subtitle">
+        <div class="subtitle text-sm sm:text-xl">
           OutFront Minnesota Youth Council and Volunteer Work
         </div>
-        <div class="content">
-          <ul>
+        <div class="content sm:text-base text-xs">
+          <ul style="padding-left: 0">
             <li>
               As a member of the Youth Council, provided youth insight to adult
               activists within the organization.
@@ -272,9 +283,11 @@
   line-height: 2;
   border-color: #c084fc;
 }
+
 .subtitle {
   font-size: 20px;
 }
+
 .content {
   margin-left: 30px;
 }

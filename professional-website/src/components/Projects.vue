@@ -1,9 +1,11 @@
 <template>
   <!-- <div class="aboutBackground flex align-items-center"> -->
-  <Card class="aboutCard border-1" style="margin-top: 66px">
-    <template #title>> This Site</template>
+  <Card class="aboutCard border-1" style="margin-top: 100px">
+    <template #title>
+      <div class="sm:text-5xl text-4xl">> This Site</div>
+    </template>
     <template #content>
-      <div>
+      <div class="sm:text-base text-xs">
         If you want to take a look at some of my work, you already have! The first
         iteration of this website was a project that was originally assigned as a
         final project for CS248 - Web and Internet Programming, which I took in
@@ -22,9 +24,6 @@
         development, and I enjoyed using it so much I decided to remake my
         professional website using Prime Vue and Vue.js.</div>
       <div>
-        <a href="https://github.com/kirchnerleo/professional-website2.git"><Button label="View on GitHub"
-            severity="success" icon="pi pi-github" style="position: static" /></a>
-
         <Galleria v-model:visible="OldWebsiteDisplay" :value="oldWebsiteImages" :responsiveOptions="responsiveOptions"
           :numVisible="4" containerStyle="max-width: 50%" :circular="true" :fullScreen="true"
           :showItemNavigators="true">
@@ -32,19 +31,28 @@
             <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
           </template>
           <template #thumbnail="slotProps">
-            <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="display: block; height: 60px" />
+            <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="display: block;"
+              class="h-2rem lg:h-4rem w-auto" />
           </template>
         </Galleria>
+        <div> <Button label="Screenshots" icon="pi pi-external-link" @click="OldWebsiteDisplay = true"
+            severity="success" style="position: static; margin-right: 10px" class="w-full sm:w-auto" />
 
-        <Button label="Screenshots of original site" icon="pi pi-external-link" @click="OldWebsiteDisplay = true"
-          severity="success" style="position: static; margin-left: 10px;" />
+          <a href="https://github.com/kirchnerleo/professional-website2.git"><Button label="View on GitHub"
+              severity="success" icon="pi pi-github" style="position: static;" class="w-full sm:w-auto" /></a>
+        </div>
+
       </div>
     </template>
   </Card>
   <Card class="aboutCard border-1">
-    <template #title>> Backpacker's Toolbox</template>
+    <template #title>
+      <div class="sm:text-5xl text-4xl">> Backpacker's Toolbox</div>
+    </template>
     <template #content>
-      <div>In the Fall of 2024, I led a semester long senior capstone project called Backpacker's Toolbox.
+      <div class="sm:text-base text-xs">
+        In the Fall of 2024, I led a semester long senior capstone project called
+        Backpacker's Toolbox.
         The vision was to create a website that backpackers could use to plan their trips, and
         would include a variety of tools (hence a "toolbox"). The final product includes a tool
         to keep track of the people one might be hiking with as well as crucial information like
@@ -58,26 +66,31 @@
           <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
         </template>
         <template #thumbnail="slotProps">
-          <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="display: block; height: 60px" />
+          <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="display: block;"
+            class="h-2rem lg:h-4rem w-auto" />
         </template>
       </Galleria>
-      <Dialog v-model:visible="BPTDemoDisplay" :style="{ width: '90%', height: '90%' }">
+      <Sidebar position="full" v-model:visible="BPTDemoDisplay">
         <video width="100%" controls>
           <source src="/src/assets/BPT_Screenshots/BPTDemo.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-      </Dialog>
+      </Sidebar>
 
-      <Button label="Screenshots of Backpacker's Toolbox" icon="pi pi-external-link" @click="BPTDisplay = true"
-        severity="success" style="position: static; margin-left: 10px;" />
-      <Button label="Video Demo" icon="pi pi-external-link" severity="success"
-        style="position: static; margin-left:10px" @click="BPTDemoDisplay = true" />
+      <Button label="Screenshots" icon="pi pi-external-link" @click="BPTDisplay = true" severity="success"
+        style="position: static; margin-right: 10px" class="w-full sm:w-auto" />
+      <Button label="Video Demo" icon="pi pi-external-link" severity="success" style="position: static;"
+        @click="BPTDemoDisplay = true" class="w-full sm:w-auto" />
     </template>
   </Card>
   <Card class="aboutCard border-1">
-    <template #title>> SpaceBox</template>
+    <template #title>
+      <div class="sm:text-5xl text-4xl">> Spacebox</div>
+    </template>
     <template #content>
-      <div>In the spring of 2024, I was a part of a semester long senior capstone project called SpaceBox.
+      <div class="sm:text-base text-xs">
+        In the spring of 2024, I was a part of a semester long senior capstone project
+        called SpaceBox.
         SpaceBox is a mapping application for solar systems, which could be used by a wide variety of users from
         teachers
         to sci-fi writers to table top game masters. SpaceBox primarly uses Vue with TypeScript, along with a RESTful
@@ -89,22 +102,22 @@
           <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
         </template>
         <template #thumbnail="slotProps">
-          <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="display: block; height: 60px" />
+          <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="display: block;"
+            class="h-2rem lg:h-4rem w-auto" />
         </template>
       </Galleria>
-      <Dialog v-model:visible="SpaceboxDemoDisplay" :style="{ width: '90%', height: '90%' }">
+      <Sidebar v-model:visible="SpaceboxDemoDisplay" position="full">
         <video width="100%" controls>
           <source src="/src/assets/Spacebox_Screenshots/SpaceboxDemo.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-      </Dialog>
+      </Sidebar>
 
-      <Button label="Screenshots of Spacebox" icon="pi pi-external-link" @click="SpaceboxDisplay = true"
-        severity="success" style="position: static; margin-left: 10px;" />
-      <Button label="Video Demo" icon="pi pi-external-link" severity="success"
-        style="position: static; margin-left:10px" @click="SpaceboxDemoDisplay = true" />
+      <Button label="Screenshots" icon="pi pi-external-link" @click="SpaceboxDisplay = true" severity="success"
+        style="position: static; margin-right: 10px" class="w-full sm:w-auto" />
+      <Button label="Video Demo" icon="pi pi-external-link" severity="success" style="position: static;"
+        @click="SpaceboxDemoDisplay = true" class="w-full sm:w-auto" />
     </template>
-    <!--screenshots-->
   </Card>
 </template>
 <script>
