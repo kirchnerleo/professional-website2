@@ -5,6 +5,9 @@
         <div class="sm:text-5xl text-4xl">> Resume</div>
       </template>
       <template #content> <!--Add option for word or pdf version-->
+        <div> Eager and highly motivated new graduate with 5 years
+          of programming experience and strong work ethic and teamwork skills
+          looking for entry level work in software development and/or information technology.</div>
         <a href="/src/assets/LeoKirchnerResume02052025NoNum.pdf" download="Leo_Kirchner_Resume.pdf"><Button
             label="Download PDF" severity="help" icon="pi pi-download" style="position: static; margin-right:10px"
             class="sm:w-auto w-full" />
@@ -25,8 +28,7 @@
           Degree: Bachelor of Science <br />
           Major: Computer Science, Interdisciplinary <br />
           Minor: Mathematics <br />
-          Fall 2022 and Spring 2023 Dean's List<br />
-          3.6 Current GPA <br />
+          Three time Dean's List recipiant, 3.6 GPA <br />
         </div>
         <br>
         <div class="content sm:text-base text-xs">
@@ -40,7 +42,10 @@
         <div class="sm:text-5xl text-4xl">> Technical Projects</div>
       </template>
       <template #content>
-        <div class="subtitle text-sm sm:text-xl">Software Engineering Practicum, Fall 2024</div>
+        <div class="subtitle text-sm sm:text-xl">Backpacker's Toolbox, Software Engineering Practicum at University of
+          Wisconsin – Stout
+          <br />(September - December 2024)
+        </div>
         <div class="content sm:text-base text-xs">
           <ul style="padding-left: 0">
             <li>
@@ -49,9 +54,9 @@
               assist backpackers in trip planning.
             </li>
             <li>
-              As team lead, built leadership skills by pursuing the spirit of an Agile and democratic team;
-              encouraged team decision making, deferred to team member’s expertise, and supported team morale and
-              learning.
+              Built leadership skills as team lead by pursuing the spirit of an Agile and democratic team; encouraged
+              team decision
+              making, deferred to team member’s expertise, and supported team morale and learning.
             </li>
             <li>
               Used this project to continue to hone technical capabilities in JavaScript, C#, and .NET in
@@ -59,7 +64,8 @@
             </li>
           </ul>
         </div>
-        <div class="subtitle text-sm sm:text-xl">Software Engineering Practicum, Spring 2024</div>
+        <div class="subtitle text-sm sm:text-xl">Spacebox, Software Engineering Practicum at University of Wisconsin –
+          Stout <br /> (February - May 2024)</div>
         <div class="content sm:text-base text-xs">
           <ul style="padding-left: 0">
             <li>
@@ -81,21 +87,23 @@
             </li>
           </ul>
         </div>
-        <div class="subtitle text-sm sm:text-xl">Personal Website</div>
+        <div class="subtitle text-sm sm:text-xl">Personal Website <br />(Ongoing)</div>
         <div class="content sm:text-base text-xs">
           <ul style="padding-left: 0">
             <li>
-              As a final project for Web and Internet Programming, designed and
-              created a professional website using HTML, CSS, JavaScript, and
+              Designed and created a professional website using HTML, CSS, JavaScript, and
               PHP.
             </li>
             <li>
-              This website was remade using Vue.js and Prime Vue.
+              Began work in summer 2024 to revitalize website using Prime Vue and Vue.js, current progress of which is
+              available
+              on GitHub.
             </li>
           </ul>
         </div>
         <div class="subtitle text-sm sm:text-xl">
           Database Manipulation and Design Final Project
+          <br /> (March - May 2023)
         </div>
         <div class="content sm:text-base text-xs">
           <ul style="padding-left: 0">
@@ -116,7 +124,7 @@
       <template #content>
         <div class="subtitle text-sm sm:text-xl">Assistant Teacher</div>
         <div class="content sm:text-base text-xs">
-          Tech Academy of Minnesota, Summer 2024
+          Tech Academy of Minnesota, June - August 2024
           <ul class="sm:text-base text-xs">
             <li>
               Supporting teachers by working “behind the scenes” to keep the
@@ -138,7 +146,7 @@
         </div>
         <div class="subtitle text-sm sm:text-xl">Building Supervisor</div>
         <div class="content sm:text-base text-xs">
-          Independent School District 196, Fall 2019 - Summer 2022
+          Independent School District 196, October 2019 - August 2022
           <ul class="sm:text-base text-xs">
             <li>
               Provided school building security during Community Education

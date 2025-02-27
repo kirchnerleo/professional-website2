@@ -7,22 +7,22 @@
     <template #content>
       <div class="sm:text-base text-xs">
         If you want to take a look at some of my work, you already have! The first
-        iteration of this website was a project that was originally assigned as a
-        final project for CS248 - Web and Internet Programming, which I took in
-        the spring of 2023. The website utilized the various skills I learned over
+        iteration of this website was a project originally assigned as a
+        final project for a Web and Internet Programming class.
+        The website utilized the various skills I learned over
         the course of that class, including HTML, CSS, Javascript, and PHP. I
         wrote all of the sourcecode using Notepad++, and hosted it on the
         University of Wisconsin - Stout's development server before moving it to
-        Nixihost for more permanent hosting. The project was challenging but
-        extremely rewarding, both with regards to the final product and the skills
-        I learned along the way. I'm always thrilled to learn something new, and
-        this project was the perfect opportunity to do so. However, I decided
+        Nixihost for more permanent hosting. I decided
         early on that as my skills improved, I would continue to improve the site.
         What you are viewing now is the second and most recent iteration of this
         project. During my time working on our Software Engineering capstone
-        project in the spring of 2024, my team and I worked with Prime Vue for our front end
+        project in the spring of 2024, my team and I worked with Vue for our front end
         development, and I enjoyed using it so much I decided to remake my
-        professional website using Prime Vue and Vue.js.</div>
+        professional website using Vue.js with Prime Vue and Prime Flex. The project was challenging but
+        extremely rewarding, both with regards to the final product and the skills
+        I learned along the way. I'm always thrilled to learn something new, and
+        this project was the perfect opportunity to do so.</div>
       <div>
         <Galleria v-model:visible="OldWebsiteDisplay" :value="oldWebsiteImages" :responsiveOptions="responsiveOptions"
           :numVisible="4" containerStyle="max-width: 50%" :circular="true" :fullScreen="true"
@@ -54,12 +54,15 @@
         In the Fall of 2024, I led a semester long senior capstone project called
         Backpacker's Toolbox.
         The vision was to create a website that backpackers could use to plan their trips, and
-        would include a variety of tools (hence a "toolbox"). The final product includes a tool
+        would include a variety of different tools (hence a "toolbox"). The final product includes a tool
         to keep track of the people one might be hiking with as well as crucial information like
         allergies and emergency contact information, which is especially crucial for treks with
         young campers. Additionally, we developed a tool for planning out hiking routes, which uses
-        Geoapify and Leaflet to display and generate routes. We used and MVC model with ASP.NET as
-        well as a custom interface written with HTML, CSS, and JavaScript.</div>
+        Geoapify and Leaflet to display and generate routes. We used an MVC model with ASP.NET as
+        well as a custom interface written with HTML, CSS, and JavaScript. We used jsPDF to create
+        PDF copies of the route and roster information so that users can bring neatly formatted print
+        outs with them on their hikes. At the end of the semester, we presented our project at Stout's CSTEMM fair.
+      </div>
       <Galleria v-model:visible="BPTDisplay" :value="BPTImages" :responsiveOptions="responsiveOptions" :numVisible="13"
         containerStyle="max-width: 50%" :circular="true" :fullScreen="true" :showItemNavigators="true">
         <template #item="slotProps">
@@ -90,12 +93,13 @@
     <template #content>
       <div class="sm:text-base text-xs">
         In the spring of 2024, I was a part of a semester long senior capstone project
-        called SpaceBox.
-        SpaceBox is a mapping application for solar systems, which could be used by a wide variety of users from
-        teachers
-        to sci-fi writers to table top game masters. SpaceBox primarly uses Vue with TypeScript, along with a RESTful
-        API.
-        Most of my work for this project was for the frontend, and it's where I was first introduced to Vue.</div>
+        called SpaceBox. SpaceBox is a mapping application for solar systems, which could be used by a wide variety of
+        users from
+        teachers to sci-fi writers to table top game masters. SpaceBox primarly uses Vue with TypeScript, along with a
+        RESTful
+        API. Most of my work for this project was for the frontend, and it's where I was first introduced to Vue.
+        Spacebox was one of the Agile teams I worked on, and I really enjoyed getting to know my team and what makes
+        Agile so beneficial.</div>
       <Galleria v-model:visible="SpaceboxDisplay" :value="SpaceBoxImages" :responsiveOptions="responsiveOptions"
         :numVisible="8" containerStyle="max-width: 50%" :circular="true" :fullScreen="true" :showItemNavigators="true">
         <template #item="slotProps">
