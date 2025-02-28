@@ -32,67 +32,67 @@ export const PhotoService = {
         return[
             {
                 itemImageSrc: "/src/assets/BPT_Screenshots/WelcomePage.png",
-                alt: "",
+                alt: "Screen shot of login page of Backpacker's Toolbox",
                 title: "Welcome Page"
             },
             {
                 itemImageSrc: "/src/assets/BPT_Screenshots/HomeGator.png",
-                alt: "",
+                alt: "Screen shot of home page of Backpacker's Toolbox",
                 title: "Home Page"
             },            
             {
                 itemImageSrc: "/src/assets/BPT_Screenshots/GatorGroups.png",
-                alt: "",
+                alt: "Screenshot of group page with list of groups",
                 title: "Groups Page"
             },            
             {
                 itemImageSrc: "/src/assets/BPT_Screenshots/NewGroup.png",
-                alt: "",
+                alt: "Screen shot of create a group page",
                 title: "New Group Page"
             },
             {
                 itemImageSrc: "/src/assets/BPT_Screenshots/JoinAGroup.png",
-                alt: "",
+                alt: "Screen shot of join a group page",
                 title: "Join a Group Page"
             },            
             {
                 itemImageSrc: "/src/assets/BPT_Screenshots/RosterPDF.png",
-                alt: "",
+                alt: "Screen shot of a PDF roster",
                 title: "Group Roster as a PDF"
             },                 
             {
                 itemImageSrc: "/src/assets/BPT_Screenshots/MapAnAfternoonStroll.png",
-                alt: "",
+                alt: "Screen shot of a mapped route",
                 title: "Sample Route"
             },            
             {
                 itemImageSrc: "/src/assets/BPT_Screenshots/EditMyRoute.png",
-                alt: "",
+                alt: "Screen shot of route editing page",
                 title: "Edit an existing Route"
             },            
             {
                 itemImageSrc: "/src/assets/BPT_Screenshots/DirectionsPDF.png",
-                alt: "",
+                alt: "Screen shot of PDF containing directions",
                 title: "Directions as a PDF"
             },            
             {
                 itemImageSrc: "/src/assets/BPT_Screenshots/HikesGator.png",
-                alt: "",
+                alt: "Screen shot of list of hikes",
                 title: "List of Hikes"
             },            
             {
                 itemImageSrc: "/src/assets/BPT_Screenshots/NewHike.png",
-                alt: "",
+                alt: "Screen shot of create a hike page",
                 title: "New hike"
             },            
             {
                 itemImageSrc: "/src/assets/BPT_Screenshots/AccountGator.png",
-                alt: "",
+                alt: "Screen shot of account page",
                 title: "Account page"
             },
             {
                 itemImageSrc: "/src/assets/BPT_Screenshots/cstemmPoster.jpg",
-                alt: "",
+                alt: "Poster from CSTEMM Fair",
                 title: "CSTEMM Poster"
             }
         ];
@@ -106,43 +106,43 @@ export const PhotoService = {
         return[
             {
                 itemImageSrc: "/src/assets/Spacebox_Screenshots/Home.png",
-                alt: "",
-                title: ""
+                alt: "Home page of SpaceBox",
+                title: "SpaceBox Home"
             },
             {
                 itemImageSrc: "/src/assets/Spacebox_Screenshots/UserSystems.png",
-                alt: "",
-                title: ""
+                alt: "Screen shot of list of user made solar systems",
+                title: "User Systems"
             },
             {
                 itemImageSrc: "/src/assets/Spacebox_Screenshots/GuestView.png",
-                alt: "",
-                title: ""
+                alt: "Screen shot of guest view of a solar system",
+                title: "Guest View"
             },
             {
                 itemImageSrc: "/src/assets/Spacebox_Screenshots/Login.png",
-                alt: "",
-                title: ""
+                alt: "Screen shot of login page",
+                title: "Login"
             },
             {
                 itemImageSrc: "/src/assets/Spacebox_Screenshots/CreateSystem.png",
-                alt: "",
-                title: ""
+                alt: "Screen shot of the user's systems and a create system button",
+                title: "New System"
             },
             {
                 itemImageSrc: "/src/assets/Spacebox_Screenshots/AddObject.png",
-                alt: "",
-                title: ""
+                alt: "Screen shot of add object tool",
+                title: "Add Object"
             },
             {
                 itemImageSrc: "/src/assets/Spacebox_Screenshots/EditObject.png",
-                alt: "",
-                title: ""
+                alt: "Scren shot of edit object tool",
+                title: "Edit Object"
             },
             {
                 itemImageSrc: "/src/assets/Spacebox_Screenshots/Account.png",
-                alt: "",
-                title: ""
+                alt: "Screen shot of account page",
+                title: "Account"
             },
         ];
     },
